@@ -14,22 +14,6 @@
 #move to log dir
 LOGDIR='/var/log/'
 cd $LOGDIR
-#refer syslog arg $1
+#refer syslog by hour selected by arg $1
 LOGFILE='syslog'
 cat $LOGFILE | grep "^.\+ $1:.\+$"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

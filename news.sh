@@ -19,7 +19,7 @@ FORMAT='+%Y%m%d'
 #get page html
 curl $TARGET_URL >tmp
 
-#get pages url from tmp file
+#get page's url from tmp file
 grep -o "\(https\?\:\/\/.[^\(\"\>\)]\+\)" tmp | uniq >url
 
 #delete intermediate file

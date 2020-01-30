@@ -11,8 +11,8 @@
 #   hoge.shスクリプトです.
 #
 ###########################################################################
-TARGET_URL='https://www.yahoo.co.jp/'
-FORMAT='+%Y%m%d'
+readonly TARGET_URL='https://www.yahoo.co.jp/'
+readonly FORMAT='+%Y%m%d'
 
 #get page html
 curl $TARGET_URL >tmp

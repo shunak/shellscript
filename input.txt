@@ -1,0 +1,10 @@
+a
+aa
+
+bbb
+bbbbbbbbbbbbbbbb
+
+c                        c
+ccccccccc cc ccccccccc
+c         cccccccc              ccccc
+   ccc     cccccccccccc c      c c    cccccc

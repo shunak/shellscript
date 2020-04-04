@@ -1,0 +1,18 @@
+#!/bin/bash
+# watchfor: watchfor someone to login
+
+PATH=/bin:/usr/bin
+
+case $# in
+    0) echo "Usage: watchfor person" 1>&2; exit 1
+esac
+
+until who | egrep "$1"
+do
+    sleep 10
+done
+
+# while sleep 5
+# do
+#     who | grep shu_ch
+# done

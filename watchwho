@@ -1,0 +1,21 @@
+#!/bin/bash
+# watchwho: watch who logs in and out
+
+PATH=/bin:/usr/bin
+new=/tmp/wwho1.$$
+old=/tmp/wwho2.$$
+>$old #craate an empty file
+
+
+while : #loop forever
+do
+    who >$new
+    diff $old $new
+    mv $new $old
+    sleep 10
+done | awk '/>/ { $1 = "in:   "; print}
+/</ { $1 = "out:  "; print}'
+
+
+
+
